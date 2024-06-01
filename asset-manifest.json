@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/alihanbays.github.io/static/css/main.468296ab.css",
-    "main.js": "/alihanbays.github.io/static/js/main.6fe3d1ef.js",
+    "main.js": "/alihanbays.github.io/static/js/main.cc5a595d.js",
     "static/js/415.4d6acbeb.chunk.js": "/alihanbays.github.io/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/alihanbays.github.io/static/js/787.1ed0c42c.chunk.js",
     "static/media/dasherBlitz.png": "/alihanbays.github.io/static/media/dasherBlitz.3b11b07da2bb6d0fba1c.png",
@@ -20,12 +20,12 @@
     "static/media/pre.svg": "/alihanbays.github.io/static/media/pre.e124e945a16419fba70f.svg",
     "index.html": "/alihanbays.github.io/index.html",
     "main.468296ab.css.map": "/alihanbays.github.io/static/css/main.468296ab.css.map",
-    "main.6fe3d1ef.js.map": "/alihanbays.github.io/static/js/main.6fe3d1ef.js.map",
+    "main.cc5a595d.js.map": "/alihanbays.github.io/static/js/main.cc5a595d.js.map",
     "415.4d6acbeb.chunk.js.map": "/alihanbays.github.io/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/alihanbays.github.io/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.468296ab.css",
-    "static/js/main.6fe3d1ef.js"
+    "static/js/main.cc5a595d.js"
   ]
 }
