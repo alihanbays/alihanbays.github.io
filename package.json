@@ -27,7 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build --branch=gh-page --repo https://github.com/alihanbays/alihanbays.github.io.git"
   },
   "homepage": "https://alihanbaysal.com",
   "eslintConfig": {
