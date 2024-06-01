@@ -1,8 +1,8 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { CgWebsite } from "react-icons/cg";
-import { BsGithub } from "react-icons/bs";
+import { CgGames, CgWebsite } from "react-icons/cg";
+import { BsGithub, BsYoutube } from "react-icons/bs";
 
 function ProjectCards(props) {
   return (
@@ -13,16 +13,44 @@ function ProjectCards(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
+
+        {/* Conditionally render the GitHub button if ghLink is provided */}
+        {props.ghLink && (
+          <Button variant="primary" href={props.ghLink} target="_blank">
+            <BsGithub /> &nbsp;
+            {props.isBlog ? "Blog" : "GitHub"}
+          </Button>
+        )}
         {"\n"}
         {"\n"}
 
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
+        {/* Conditionally render the Play button if playLink is provided */}
+        {props.playLink && (
+          <Button
+            variant="primary"
+            href={props.playLink}
+            target="_blank"
+            style={{ marginLeft: "10px" }}
+          >
+            <CgGames /> &nbsp;
+            {"Play"}
+          </Button>
+        )}
 
-        {!props.isBlog && props.demoLink && (
+        {/* Conditionally render the YouTube button if youtubeLink is provided */}
+        {props.youtubeLink && (
+          <Button
+            variant="primary"
+            href={props.youtubeLink}
+            target="_blank"
+            style={{ marginLeft: "10px" }}
+          >
+            <BsYoutube /> &nbsp;
+            {"YouTube"}
+          </Button>
+        )}
+
+        {props.demoLink && (
           <Button
             variant="primary"
             href={props.demoLink}
@@ -37,4 +65,5 @@ function ProjectCards(props) {
     </Card>
   );
 }
+
 export default ProjectCards;
