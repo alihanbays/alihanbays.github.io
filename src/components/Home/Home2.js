@@ -14,43 +14,43 @@ function Home2() {
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
-        <Col md={8} className="home-about-description">
-  <h1 style={{ fontSize: "2.6em" }}>
-    Let me <span className="purple"> introduce </span> myself
-  </h1>
-  <p className="home-about-body">
-    I'm Alihan, a passionate game developer with a love for bringing unique and engaging gaming experiences to life. 
-    <br />
-    <br />I’ve dived deep into the world of
-    <i>
-      <b className="purple"> C#, Unity, and Python, </b>
-    </i>
-    constantly exploring and learning new things every day.
-    <br />
-    <br />
-    My main interests lie in crafting new &nbsp;
-    <i>
-      <b className="purple">2D and 3D games</b> and
-      pushing the boundaries with{" "}
-      <b className="purple">
-        innovative game mechanics and storytelling.
-      </b>
-    </i>
-    <br />
-    <br />
-    Whenever I get the chance, I love pouring my creativity into developing immersive gameplay experiences using <b className="purple">Unity</b> and
-    <i>
-      <b className="purple">
-        {" "}
-        modern game development techniques
-      </b>
-    </i>
-    &nbsp; such as
-    <i>
-      <b className="purple"> procedural generation and real-time multiplayer features.</b>
-    </i>
-  </p>
-        </Col>
+          <Col md={8} className="home-about-description">
+            <h1 style={{ fontSize: "2.6em" }}>
+              Let me <span className="purple"> introduce </span> myself
+            </h1>
+            <p className="home-about-body">
+              I'm Alihan, a passionate software engineer with a love for solving complex problems and creating efficient, scalable solutions.
+              <br />
+              <br />I’ve dived deep into the world of
+              <i>
+                <b className="purple"> C#, Python, JavaScript, and React, </b>
+              </i>
+              constantly exploring and learning new things every day.
+              <br />
+              <br />
+              My main interests lie in developing robust &nbsp;
+              <i>
+                <b className="purple">web applications</b> and
+                pushing the boundaries with{" "}
+                <b className="purple">
+                  innovative software solutions and architecture.
+                </b>
+              </i>
+              <br />
+              <br />
+              Whenever I get the chance, I love pouring my creativity into building efficient systems using <b className="purple">modern development practices</b> and
+              <i>
+                <b className="purple">
+                  {" "}
+                  agile methodologies.
+                </b>
+              </i>
+              &nbsp; such as
+              <i>
+                <b className="purple"> continuous integration and continuous deployment (CI/CD) pipelines.</b>
+              </i>
+            </p>
+          </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
@@ -111,4 +111,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;
