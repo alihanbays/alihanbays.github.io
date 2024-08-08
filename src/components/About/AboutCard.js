@@ -11,17 +11,14 @@ function AboutCard() {
             Hi Everyone, I am <span className="purple">Alihan Baysal </span>
             from <span className="purple">Corvallis, Oregon.</span>
             <br />
-            I am an indie game developer and founder of Baysal Interactive.
+            I am a passionate software developer with a love for building innovative and efficient solutions.
             <br />
-            I graduated with a degree in <span className="purple">Computer Science </span> and have a passion for creating engaging gaming experiences.
+            I graduated with a degree in <span className="purple">Computer Science </span> and have a keen interest in exploring new technologies and solving complex problems.
             <br />
             <br />
             Apart from coding, here are a few activities I love to do:
           </p>
           <ul>
-            <li className="about-activity">
-              <ImTrophy /> Playing Games
-            </li>
             <li className="about-activity">
               <ImStopwatch /> Working Out
             </li>
@@ -30,6 +27,9 @@ function AboutCard() {
             </li>
             <li className="about-activity">
               <ImMusic /> Playing Guitar
+            </li>
+            <li className="about-activity">
+              <ImTrophy /> Playing Games
             </li>
           </ul>
         </blockquote>
