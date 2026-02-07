@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.bb5ca9d1.css",
+    "main.css": "/static/css/main.4fb7659f.css",
     "main.js": "/static/js/main.107d8a13.js",
     "static/js/415.4d6acbeb.chunk.js": "/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
@@ -13,20 +13,20 @@
     "static/media/shape-n-surf.png": "/static/media/shape-n-surf.11b111b0fdfa279d71c1.png",
     "static/media/home_bg_mine.jpg": "/static/media/home_bg_mine.1cffd6e87375b93f818c.jpg",
     "static/media/kingOfTheHill.png": "/static/media/kingOfTheHill.ff303b2373cfc4328d12.png",
-    "static/media/home-main.svg": "/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
+    "static/media/home-main.svg": "/static/media/home-main.541f8179af8209ce03ccf2178fe62dbf.svg",
     "static/media/slimeclimb.png": "/static/media/slimeclimb.b18eed20036aa2deb251.png",
     "static/media/dotify.png": "/static/media/dotify.61bc72f6ba7fbc44a0fa.png",
     "static/media/Alihan_Baysal_Resume.pdf": "/static/media/Alihan_Baysal_Resume.4842f3332a04795e0e81.pdf",
     "static/media/home_logo.svg": "/static/media/home_logo.1b48d1edadfa016729295fcc44ca3257.svg",
-    "static/media/pre.svg": "/static/media/pre.e124e945a16419fba70f.svg",
+    "static/media/pre.svg": "/static/media/pre.072c053c4bd78fcd7066.svg",
     "index.html": "/index.html",
-    "main.bb5ca9d1.css.map": "/static/css/main.bb5ca9d1.css.map",
+    "main.4fb7659f.css.map": "/static/css/main.4fb7659f.css.map",
     "main.107d8a13.js.map": "/static/js/main.107d8a13.js.map",
     "415.4d6acbeb.chunk.js.map": "/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb5ca9d1.css",
+    "static/css/main.4fb7659f.css",
     "static/js/main.107d8a13.js"
   ]
 }
