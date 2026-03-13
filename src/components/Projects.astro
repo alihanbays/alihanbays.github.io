@@ -1,39 +1,111 @@
 ---
 import GitHub from "./icons/GitHub.astro"
-import NextJS from "./icons/NextJS.astro"
-import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 
 const TAGS = {
-  NEXT: {
-    name: "Next.js",
-    class: "bg-black text-white",
-    icon: NextJS,
+  CSHARP: {
+    name: "C#",
+    class: "bg-purple-600 text-white",
   },
-  TAILWIND: {
-    name: "Tailwind CSS",
-    class: "bg-[#003159] text-white",
-    icon: Tailwind,
+  DOTNET: {
+    name: ".NET Core",
+    class: "bg-blue-600 text-white",
+  },
+  CPP: {
+    name: "C++",
+    class: "bg-blue-500 text-white",
+  },
+  SDL: {
+    name: "SDL3",
+    class: "bg-gray-700 text-white",
+  },
+  PYTHON: {
+    name: "Python",
+    class: "bg-yellow-600 text-white",
+  },
+  TYPESCRIPT: {
+    name: "TypeScript",
+    class: "bg-blue-700 text-white",
+  },
+  DOCKER: {
+    name: "Docker",
+    class: "bg-cyan-600 text-white",
+  },
+  EXPRESS: {
+    name: "Express.js",
+    class: "bg-gray-600 text-white",
+  },
+  FFMPEG: {
+    name: "FFmpeg",
+    class: "bg-green-700 text-white",
+  },
+  RAYLIB: {
+    name: "raylib",
+    class: "bg-red-600 text-white",
+  },
+  PYAUTOGUI: {
+    name: "PyAutoGUI",
+    class: "bg-orange-600 text-white",
+  },
+  ASPNET: {
+    name: "ASP.NET",
+    class: "bg-indigo-600 text-white",
+  },
+  REST: {
+    name: "REST API",
+    class: "bg-emerald-600 text-white",
   },
 }
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "Social Media Platform",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Full-stack social media platform. OAuth authentication, many-to-many relationship modeling for follow system, RESTful API architecture. Complex database queries for dynamic timeline rendering.",
+    link: "https://github.com/alihanbays/twitter-clone",
+    github: "https://github.com/alihanbays/twitter-clone",
+    image: "/projects/twitter-clone.webp",
+    tags: [TAGS.CSHARP, TAGS.DOTNET, TAGS.ASPNET, TAGS.REST],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "YouTube Clone",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Video platform built with microservices architecture. Video processing service handles transcoding to multiple resolutions using FFmpeg. Dockerized deployment with REST API endpoints.",
+    github: "https://github.com/alihanbays/youtube-clone",
+    image: "/projects/youtube-clone.webp",
+    tags: [TAGS.TYPESCRIPT, TAGS.EXPRESS, TAGS.DOCKER, TAGS.FFMPEG],
+  },
+  {
+    title: "Pandemic Simulator",
+    description:
+      "Visual pandemic spread simulator with interactive grid. Click to start infections that propagate using BFS algorithm. Real-time visualization of graph traversal and disease modeling.",
+    github: "https://github.com/alihanbays/pandemic-simulator",
+    image: "/projects/pandemic-simulator.webp",
+    tags: [TAGS.CPP, TAGS.RAYLIB],
+  },
+  {
+    title: "Game Engine",
+    description:
+      "Game engine implementation from scratch. Real-time game loop architecture, collision detection algorithms, and low-level 2D rendering. Systems programming and graphics fundamentals.",
+    github: "https://github.com/alihanbays/SDL3-Pong",
+    image: "/projects/pong.gif",
+    tags: [TAGS.CPP, TAGS.SDL],
+  },
+  {
+    title: "Monopoly Go Bot",
+    description:
+      "Automation bot using computer vision to detect UI elements and simulate gameplay inputs. Image recognition for button detection with automated idle gameplay.",
+    github: "https://github.com/alihanbays/Monopoly-Go-Bot",
+    image: "/projects/monopolygo.webp",
+    tags: [TAGS.PYTHON, TAGS.PYAUTOGUI],
+  },
+  {
+    title: "Automated API Scraper",
+    description:
+      "Automated scraper integrating external API with webhook system. Deployed on edge device with scheduled execution for autonomous operation.",
+    github: "https://github.com/alihanbays/Daily-LeetCode-Scraper",
+    image: "/projects/leetcode-scraper.webp",
+    tags: [TAGS.CSHARP, TAGS.DOTNET, TAGS.REST],
   },
 ]
 ---
@@ -44,7 +116,7 @@ const PROJECTS = [
     <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
   <div class="w-full md:w-1/2">
     <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-      <img alt="Recién llegado vs 5 años en Nueva Zelanda" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+      <img alt={title} class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
     </div>
   </div>
 
@@ -57,9 +129,8 @@ const PROJECTS = [
           {tags.map((tag) => (
             <li>
               <span
-                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+                class={`rounded-full text-xs ${tag.class} py-1 px-3 text-center`}
               >
-                <tag.icon class="size-4" />
                 {tag.name}
               </span>
             </li>
@@ -72,10 +143,9 @@ const PROJECTS = [
             <LinkButton href={github}>
               <GitHub class="size-6" />
               Code
-              
             </LinkButton>
           )}
-          {link && (
+          {link && link !== github && (
             <LinkButton href={link}>
               <Link class="size-4" />
               Preview
@@ -88,6 +158,3 @@ const PROJECTS = [
     ))
   }
 </div>
-
-
-

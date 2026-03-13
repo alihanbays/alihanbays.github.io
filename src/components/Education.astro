@@ -1,0 +1,23 @@
+---
+import EducationItem from "./EducationItem.astro"
+
+const EDUCATION = [
+  {
+    degree: "Bachelor of Science in Computer Science",
+    school: "Oregon State University",
+    logo: "/osu-logo.png",
+    date: "Sept 2019 - March 2024",
+    description: "Software engineering, algorithms, data structures, operating systems, database management systems."
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EDUCATION.map((education) => (
+      <li class="">
+        <EducationItem {...education} />
+      </li>
+    ))
+  }
+</ol>

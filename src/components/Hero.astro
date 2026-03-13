@@ -1,8 +1,9 @@
 ---
-const personalImageAlt = "Miguel Ángel"
+const personalImageAlt = "Alihan Baysal"
 import Badge from "@/components/Badge.astro"
 import LinkedInIcon from "@/components/icons/LinkedIn.astro"
 import MailIcon from "@/components/icons/Mail.astro"
+import GitHubIcon from "@/components/icons/GitHub.astro"
 import SocialPill from "@/components/SocialPill.astro"
 ---
 
@@ -10,39 +11,38 @@ import SocialPill from "@/components/SocialPill.astro"
   <div class="flex gap-4 mb-4">
     <img
       class="rounded-full shadow-lg size-16"
-      src="/midudev.webp"
+      src="/portrait.jpg"
       alt={personalImageAlt}
     />
-    <a
-      href="https://linkedin.com/in/midudev"
-      target="_blank"
-      rel="noopener"
-      class="flex items-center transition md:justify-center md:hover:scale-105"
-    >
-      <Badge>Disponible para trabajar</Badge>
-    </a>
   </div>
   <h1
     class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
   >
-    Hey, soy midudev
+    Hey, I'm Alihan Baysal
   </h1>
   <p
-    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+    class="mt-6 text-xl text-gray-800 dark:text-gray-300"
   >
-    +15 años de experiencia. <strong
-      >Ingeniero de Software y Creador de Contenido sobre Programación</strong
-    > de Barcelona, España 🇪🇸. Especializado en el desarrollo de aplicaciones web
-    únicas.
+    <span class="text-yellow-500 dark:text-yellow-200">Software Engineer</span> building production systems at scale. Architected enterprise applications handling 10M+ records. Expert in distributed systems and microservices architecture.
   </p>
   <nav class="flex flex-wrap gap-4 mt-8">
-    <SocialPill href="mailto:miduga@gmail.com">
-      <MailIcon class="size-4" />
-      Contáctame
-    </SocialPill>
-    <SocialPill href="https://linkedin.com/in/midudev">
+    <a
+      href="/cv.pdf"
+      download="Alihan_Baysal_Resume.pdf"
+      class="inline-flex items-center justify-center gap-2 px-4 py-2 text-white transition bg-blue-500 border border-blue-500 rounded-full hover:bg-blue-600 hover:border-blue-600 focus-visible:ring-yellow-500/80 text-md group max-w-fit focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"
+    >
+      <svg class="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+      </svg>
+      Download Resume
+    </a>
+    <SocialPill href="https://linkedin.com/in/alihanbaysal">
       <LinkedInIcon class="size-4" />
       LinkedIn
+    </SocialPill>
+    <SocialPill href="https://github.com/alihanbays">
+      <GitHubIcon class="size-4" />
+      GitHub
     </SocialPill>
   </nav>
 </div>
